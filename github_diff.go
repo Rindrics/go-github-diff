@@ -475,7 +475,7 @@ func parseGitDiffFileString(input string) (*GitDiff, error) {
 				return nil, errors.New("invalid file paths")
 			}
 		case strings.HasPrefix(line, "index "):
-			index = strings.TrimSpace(line[6:])
+			index = line[6:]
 		default:
 			diff = append(diff, line)
 		}
