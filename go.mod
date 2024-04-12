@@ -1,4 +1,4 @@
-module github.com/kmesiab/go-github-diff
+module github.com/Rindrics/go-github-diff
 
 go 1.21
 
